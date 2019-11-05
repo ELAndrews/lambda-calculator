@@ -14,7 +14,7 @@ const Numbers = (props) => {
   // STEP 2 - add the imported data to state
   const [numberState, setNumberState] = React.useState(numbers);
   return (
-    <div>
+    <div className="numberContainer">
       {numbers.map((num, index) =>{
         return (
           <NumberButton 

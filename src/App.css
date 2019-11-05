@@ -5,6 +5,7 @@
     border-radius: 15px;
     border: 2px solid grey;
     padding-bottom: 25px;
+    margin: 0px auto;
 }
 .display {
     margin-top: 25px;
@@ -19,4 +20,23 @@
     align-items: flex-end;
     padding-right: 8%;
     font-size: 5.0rem;
+  }
+
+  button{
+      /* color: white; */
+      border-radius: 50%;
+      font-size: 30px; 
+      padding: 10px;
+      height: 90px;
+      width: 90px;
+      margin: 15px;
+
+  }
+  .numberContainer {
+   width: 75%;
+  }
+
+  .operatorContainer {
+      display: flex;
+      flex-direction: column;
   }

@@ -11,7 +11,7 @@ const Operators = (props) => {
   // STEP 2 - add the imported data to state
   const [operatorState, setOperatorState] = React.useState(operators);
   return (
-    <div>
+    <div className="operatorContainer">
       {operators.map((op, index) =>{
         return (
           <OperatorButton 
