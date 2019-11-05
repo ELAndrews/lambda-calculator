@@ -19,7 +19,10 @@ const Numbers = (props) => {
         return (
           <NumberButton 
           num={num}
-          key={index}/>
+          key={index}
+          numberState={numberState}
+          setNumberState={setNumberState}
+          />
         )
       })}
       {/* STEP 3 - Use .map() to iterate over your array data and return a button

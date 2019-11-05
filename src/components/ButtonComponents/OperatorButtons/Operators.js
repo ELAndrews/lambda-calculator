@@ -16,7 +16,9 @@ const Operators = (props) => {
         return (
           <OperatorButton 
           op={op}
-          key={index}/>
+          key={index}
+          operatorState={operatorState}
+          setOperatorState={setOperatorState}/>
         )
       })}
       {/* STEP 3 - Use .map() to iterate over your array data and return a button
