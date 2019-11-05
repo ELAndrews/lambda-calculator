@@ -8,14 +8,16 @@ import { SpecialButton } from "./SpecialButton.js";
 
 const Specials = (props) => {
   // STEP 2 - add the imported data to state
-  const [specialsState, setSpecialsState] = React.useState(specials);
+  // const [specialsState, setSpecialsState] = React.useState(specials);
   return (
     <div className="specialContainer">
       {specials.map((char, index) =>{
         return (
           <SpecialButton 
           char={char}
-          key={index}/>
+          key={index}
+          specialsState={props.specialsState}
+          setSepcialState={props.setSepcialState}/>
         )
       })}
       {/* STEP 3 - Use .map() to iterate over your array data and return a button

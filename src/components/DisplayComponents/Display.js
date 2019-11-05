@@ -1,7 +1,9 @@
 import React from "react";
 
 export const Display = (props) => {
-  return <div className="display">0{/* Display any props data here */}</div>;
+  // const [displayState, setDisplayState] = React.useState(0);
+
+  return <div className="display">{ props.displayState }</div>;
 };
 
 export default Display

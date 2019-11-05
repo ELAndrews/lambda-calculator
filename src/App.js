@@ -7,16 +7,24 @@ import Display  from "./components/DisplayComponents/Display.js";
 
 // STEP 4 - import the button and display components
 // Don't forget to import any extra css/scss files you build into the correct component
-import { OperatorButton } from "./components/ButtonComponents/OperatorButtons/OperatorButton.js";
-import { NumberButton } from "./components/ButtonComponents/NumberButtons/NumberButton.js";
-import { SpecialButton } from "./components/ButtonComponents/SpecialButtons/SpecialButton.js";
+
+
+// import { OperatorButton } from "./components/ButtonComponents/OperatorButtons/OperatorButton.js";
+// import { NumberButton } from "./components/ButtonComponents/NumberButtons/NumberButton.js";
+// import { SpecialButton } from "./components/ButtonComponents/SpecialButtons/SpecialButton.js";
+
+
 // Logo has already been provided for you. Do the same for the remaining components
 import Logo from "./components/DisplayComponents/Logo";
-import { numberLiteralTypeAnnotation } from "@babel/types";
+// import { numberLiteralTypeAnnotation } from "@babel/types";
 
 
 
 function App() {
+  const [displayState, setDisplayState] = React.useState(0);
+  const [numberState, setNumberState] = React.useState();
+  const [operatorState, setOperatorState] = React.useState();
+  const [specialsState, setSpecialsState] = React.useState();
 
   // STEP 5 - After you get the components displaying using the provided data file, write your state hooks here.
   // Once the state hooks are in place write some functions to hold data in state and update that data depending on what it needs to be doing
@@ -24,14 +32,24 @@ function App() {
   // the "5" button, or the operator if they click one of those buttons) and then call your setter function to update state.
   // Don't forget to pass the functions (and any additional data needed) to the components as props
 
+
+
   return (
     <div className="container">
       <Logo />
       <div className="App">
-        <Display />
-        <Specials />
-        <Numbers />
-        <Operators />
+        <Display 
+          displayState={displayState}
+          setDisplayState={setDisplayState}/>
+        <Specials 
+          specialsState={specialsState}
+          setSpecialsState={setSpecialsState}/>
+        <Numbers 
+          numberState={numberState}
+          setNumberState={setNumberState}/>
+        <Operators 
+          operatorState={operatorState}
+          setOperatorState={setOperatorState}/>
       </div>
     </div>
   );
