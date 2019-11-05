@@ -22,6 +22,7 @@ const Numbers = (props) => {
           key={index}
           numberState={props.numberState}
           setNumberState={props.setNumberState}
+          displayState={props.displayState}
           setDisplayState={props.setDisplayState}
           />
         )

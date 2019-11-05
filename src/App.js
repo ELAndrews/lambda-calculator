@@ -48,14 +48,17 @@ function App() {
         <Specials 
           specialsState={specialsState}
           setSpecialsState={setSpecialsState}
+          displayState={displayState}
           setDisplayState={setDisplayState}/>
         <Numbers 
           numberState={numberState}
           setNumberState={setNumberState}
+          displayState={displayState}
           setDisplayState={setDisplayState}/>
         <Operators 
           operatorState={operatorState}
           setOperatorState={setOperatorState}
+          displayState={displayState}
           setDisplayState={setDisplayState}/>
       </div>
     </div>
