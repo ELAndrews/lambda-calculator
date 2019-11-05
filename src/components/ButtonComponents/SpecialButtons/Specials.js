@@ -10,7 +10,7 @@ const Specials = (props) => {
   // STEP 2 - add the imported data to state
   const [specialsState, setSpecialsState] = React.useState(specials);
   return (
-    <div>
+    <div className="specialContainer">
       {specials.map((char, index) =>{
         return (
           <SpecialButton 
