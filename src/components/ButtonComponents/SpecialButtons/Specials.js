@@ -17,7 +17,9 @@ const Specials = (props) => {
           char={char}
           key={index}
           specialsState={props.specialsState}
-          setSepcialState={props.setSepcialState}/>
+          setSepcialState={props.setSepcialState}
+          displayState={props.displayState}
+          setDisplayState={props.setDisplayState}/>
         )
       })}
       {/* STEP 3 - Use .map() to iterate over your array data and return a button

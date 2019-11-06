@@ -1,12 +1,11 @@
 import React from "react";
 
 
-export const SpecialButton = (prop) => {
+export const SpecialButton = (props) => {
   return (
-    <button onClick ={() => {
-      if(prop.char === 'C'){
-        prop.setDisplayState(null)}}}>
-      {prop.char}
+    <button 
+    onClick ={() => props.char === "C" ? props.setDisplayState(0) : null} >
+      {props.char}
     </button>
   );
 };

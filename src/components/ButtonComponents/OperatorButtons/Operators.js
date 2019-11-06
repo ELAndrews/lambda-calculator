@@ -18,7 +18,9 @@ const Operators = (props) => {
           op={op}
           key={index}
           operatorState={props.operatorState}
-          setOperatorState={props.setOperatorState}/>
+          setOperatorState={props.setOperatorState}
+          displayState={props.displayState}
+          setDisplayState={props.setDisplayState}/>
         )
       })}
       {/* STEP 3 - Use .map() to iterate over your array data and return a button
