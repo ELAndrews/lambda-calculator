@@ -1,9 +1,14 @@
 import React from "react";
+import "../../../App.css";
 
-const NumberButton = () => {
+export function NumberButton(props) {
+ 
   return (
-    <>
-      {/* Display a button element rendering the data being passed down from the parent container on props */}
-    </>
+      <button className="numberBtn"
+      id={props.num === '0' ? 'longBtn':null} 
+      onClick ={() => props.setDisplayState(props.displayState === 0 ? props.num :  props.displayState + props.num  )}
+      >
+        {props.num}
+      </button>
   );
 };

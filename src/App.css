@@ -1,3 +1,7 @@
+.App {
+    padding: 20px;
+}
+
 .container {
     background-color: #c00025;
     width: 100%;
@@ -5,9 +9,14 @@
     border-radius: 15px;
     border: 2px solid grey;
     padding-bottom: 25px;
+    margin: 0px auto;
 }
+.logo{
+ margin: 40px 0px 0px 40px;;
+}
+
 .display {
-    margin-top: 25px;
+    margin: 0px auto;
     height: 100px;
     width: 450px;
     border-radius: 50px;
@@ -19,4 +28,44 @@
     align-items: flex-end;
     padding-right: 8%;
     font-size: 5.0rem;
+  }
+
+  button{
+      border-radius: 50%;
+      font-size: 30px; 
+      padding: 10px;
+      height: 100px;
+      width: 100px;
+      margin: 13px;
+      color: white;
+      border: none;
+      box-shadow: 0px 5px 10px black
+
+  }
+  .numberContainer {
+   width: 80%;
+  }
+  .numberContainer button{
+      background-color: rgb(16, 43, 101);
+  }
+
+  #longBtn{
+    width: 226px;
+    border-radius: 100px;
+  } 
+
+  .operatorContainer {
+      display: flex;
+      flex-direction: column;
+      float: right;
+      position: relative;
+      bottom: 630px;
+  }
+
+  .operatorContainer button {
+      background-color: rgb(52, 165, 222);
+  }
+
+  .specialContainer button {
+      background-color: rgb(27, 75, 160);
   }
